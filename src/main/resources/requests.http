@@ -1,0 +1,20 @@
+POST http://localhost:8080/accounts
+Content-Type: application/json
+
+{ "firstName" : "Aydar",
+  "lastName": "Zakirov" }
+###
+GET http://localhost:8080/accounts/1
+###
+GET http://localhost:8080/accounts/1/getAccountInfo
+###
+GET http://localhost:8080/accounts/1/projects
+###
+PATCH http://localhost:8080/accounts/1
+Content-Type: application/json
+
+{ "firstName" : "AydarUpdate",
+  "lastName": "ZakirovUpdated" }
+
+###
+DELETE http://localhost:8080/accounts/1
